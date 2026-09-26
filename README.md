@@ -1,6 +1,6 @@
 # nerdpowered.tech
 
-Maker site for NerdPowered, served by GitHub Pages at https://nerdpowered.tech.
+Maker site for Nerd Powered, served by GitHub Pages at https://nerdpowered.tech.
 Plain static HTML and CSS, no build step.
 
 ## Structure
@@ -47,4 +47,4 @@ Any static server from the repo root works, for example:
 npx serve .
 ```
 
-© 2026 NerdPowered. Site content and images are not licensed for reuse.
+© 2026 Nerd Powered. Site content and images are not licensed for reuse.
