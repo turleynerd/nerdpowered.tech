@@ -14,12 +14,12 @@ assets/img/             logo.svg / favicon.svg, og.png (social preview), product
 CNAME                   custom domain for GitHub Pages
 ```
 
-## Going live on the Elgato Marketplace
+## Elgato Marketplace
 
-When the Starship Ops Panel listing is published, update the two buttons in
-`starship-ops/index.html` (`#marketplace-hero` and `#marketplace-cta`): set `href`
-to the listing URL, remove `aria-disabled="true"`, and change the label to
-"Get it on the Elgato Marketplace". Also update the "Coming soon" section heading.
+- Product: https://marketplace.elgato.com/product/starship-ops-panel-eb4aa49d-fa7f-4e74-9cfb-0752255a216e
+- Maker profile: https://marketplace.elgato.com/@nerdpowered
+
+Product media on `/starship-ops/` (`demo.mp4`, `gallery-*.jpg`, `thumbnail.jpg`) comes from the widget repo's `docs/marketplace/`, converted to JPG with ffmpeg for page weight.
 
 ## DNS
 

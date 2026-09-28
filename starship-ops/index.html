@@ -12,7 +12,7 @@
 	<meta property="og:title" content="Starship Ops Panel for CORSAIR XENEON EDGE">
 	<meta property="og:description" content="Live sensors, now playing, Stream Deck keys, stardate clock and Red Alert on your XENEON EDGE.">
 	<meta property="og:url" content="https://nerdpowered.tech/starship-ops/">
-	<meta property="og:image" content="https://nerdpowered.tech/assets/img/og.png">
+	<meta property="og:image" content="https://nerdpowered.tech/assets/img/starship-ops/thumbnail.jpg">
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,6 +31,7 @@
 			<nav class="site-nav" aria-label="Main">
 				<a href="/#projects">Projects</a>
 				<a href="/starship-ops/" aria-current="page">Starship Ops</a>
+				<a class="nav-optional" href="https://marketplace.elgato.com/@nerdpowered">Marketplace</a>
 				<a class="nav-optional" href="https://github.com/turleynerd">GitHub</a>
 			</nav>
 		</div>
@@ -43,17 +44,20 @@
 				<h1>Starship Ops <span class="accent">Panel</span></h1>
 				<p class="lede">Turn your XENEON EDGE into a full-screen starship operations console. Watch your hardware, control your music, fire Stream Deck actions and sound Red Alert when things run hot.</p>
 				<div class="actions">
-					<!-- Marketplace: replace href with the listing URL and remove aria-disabled once it is live. -->
-					<a class="btn btn-primary" id="marketplace-hero" href="#get" aria-disabled="true">Coming soon to the Elgato Marketplace</a>
+					<a class="btn btn-primary" id="marketplace-hero" href="https://marketplace.elgato.com/product/starship-ops-panel-eb4aa49d-fa7f-4e74-9cfb-0752255a216e">Get it on the Elgato Marketplace</a>
 					<a class="btn btn-ghost" href="#features">See features</a>
 				</div>
-				<p class="meta">For the CORSAIR XENEON EDGE with iCUE 5.46 or newer on Windows.</p>
+				<p class="meta">For the CORSAIR XENEON EDGE with iCUE 5.46 or newer on Windows. Sold by <a href="https://marketplace.elgato.com/@nerdpowered">Nerd Powered</a> on the Elgato Marketplace.</p>
 			</div>
 		</section>
 
 		<div class="wrap">
 			<figure class="frame">
-				<img src="/assets/img/starship-ops/horizontal.png" width="2536" height="696" alt="Starship Ops Panel in the horizontal layout: primary systems sensor bars, audio subsystem with now playing, command keys from Stream Deck, stardate and a month calendar.">
+				<video id="demo" autoplay muted loop playsinline preload="metadata" width="1920" height="1080"
+					poster="/assets/img/starship-ops/demo-poster.jpg"
+					aria-label="Demo: live sensors, docking a panel, Red Alert by touch and by temperature, the four palettes and Stream Deck keys.">
+					<source src="/assets/img/starship-ops/demo.mp4" type="video/mp4">
+				</video>
 			</figure>
 		</div>
 
@@ -103,21 +107,12 @@
 				<div class="section-head">
 					<h2 id="gallery-title">In action</h2>
 				</div>
-				<div class="gallery">
-					<div class="wide">
-						<figure>
-							<div class="frame"><img src="/assets/img/starship-ops/red-alert.png" width="2536" height="696" loading="lazy" alt="Red Alert: the whole console turns red with a pulsing RED ALERT title after the CPU package temperature passes its threshold."></div>
-							<figcaption>Red Alert, triggered automatically by CPU temperature.</figcaption>
-						</figure>
-						<figure>
-							<div class="frame"><img src="/assets/img/starship-ops/no-stream-deck.png" width="2536" height="696" loading="lazy" alt="The console without Stream Deck: sensors and audio panels fill the full width."></div>
-							<figcaption>No Stream Deck? Turn Command Keys off and the other panels take the space.</figcaption>
-						</figure>
-					</div>
-					<figure class="tall">
-						<div class="frame"><img src="/assets/img/starship-ops/vertical.png" width="696" height="2536" loading="lazy" alt="Vertical layout with the header, sensors, audio and command keys stacked top to bottom and alert buttons at the bottom of the sidebar."></div>
-						<figcaption>Vertical layout.</figcaption>
-					</figure>
+				<div class="shots">
+					<figure class="frame"><img src="/assets/img/starship-ops/gallery-1-red-alert.jpg" width="1920" height="960" loading="lazy" alt="Red Alert: the whole console turns red and names the sensor that tripped it."></figure>
+					<figure class="frame"><img src="/assets/img/starship-ops/gallery-2-sensors.jpg" width="1920" height="960" loading="lazy" alt="Primary Systems: six sensor slots with custom labels and live bar readouts."></figure>
+					<figure class="frame"><img src="/assets/img/starship-ops/gallery-3-command.jpg" width="1920" height="960" loading="lazy" alt="Command Keys: eight touch keys showing your Stream Deck actions, icons and titles."></figure>
+					<figure class="frame"><img src="/assets/img/starship-ops/gallery-4-vertical.jpg" width="1920" height="960" loading="lazy" alt="The vertical layout for an upright XENEON EDGE."></figure>
+					<figure class="frame"><img src="/assets/img/starship-ops/gallery-5-palettes.jpg" width="1920" height="960" loading="lazy" alt="The four color palettes: Classic, Blue, Red and Yellow."></figure>
 				</div>
 			</div>
 		</section>
@@ -150,11 +145,11 @@
 			<div class="wrap">
 				<div class="cta-band">
 					<p class="eyebrow">Elgato Marketplace</p>
-					<h2 id="get-title">Coming soon</h2>
-					<p class="lede" style="margin-left:auto;margin-right:auto">Starship Ops Panel is on its way to the Elgato Marketplace. Check back here for the link.</p>
+					<h2 id="get-title">Available now</h2>
+					<p class="lede" style="margin-left:auto;margin-right:auto">Get Starship Ops Panel on the Elgato Marketplace and install it straight into iCUE.</p>
 					<div class="actions">
-						<!-- Marketplace: replace href with the listing URL and remove aria-disabled once it is live. -->
-						<a class="btn btn-primary" id="marketplace-cta" href="#get" aria-disabled="true">Coming soon to the Elgato Marketplace</a>
+						<a class="btn btn-primary" id="marketplace-cta" href="https://marketplace.elgato.com/product/starship-ops-panel-eb4aa49d-fa7f-4e74-9cfb-0752255a216e">Get it on the Elgato Marketplace</a>
+						<a class="btn btn-ghost" href="https://marketplace.elgato.com/@nerdpowered">More from Nerd Powered</a>
 					</div>
 				</div>
 			</div>
@@ -163,9 +158,17 @@
 
 	<footer class="site-footer">
 		<div class="wrap">
-			<p>© 2026 Nerd Powered. <a href="/">Home</a> · <a href="https://github.com/turleynerd">GitHub</a></p>
+			<p>© 2026 Nerd Powered. <a href="/">Home</a> · <a href="https://marketplace.elgato.com/@nerdpowered">Elgato Marketplace</a> · <a href="https://github.com/turleynerd">GitHub</a></p>
 			<p>CORSAIR, iCUE, XENEON EDGE, Elgato and Stream Deck are trademarks of their respective owners. Nerd Powered is not affiliated with or endorsed by CORSAIR or Elgato. Starship Ops Panel is an independent fan-inspired design and is not affiliated with any film or TV franchise.</p>
 		</div>
 	</footer>
+	<script>
+		if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+			var demo = document.getElementById("demo");
+			demo.removeAttribute("autoplay");
+			demo.pause();
+			demo.controls = true;
+		}
+	</script>
 </body>
 </html>

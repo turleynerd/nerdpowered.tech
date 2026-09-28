@@ -421,6 +421,27 @@ a.card:hover {
 	font-size: 15px;
 }
 
+.frame video {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.shots {
+	display: grid;
+	gap: 18px;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 480px), 1fr));
+}
+
+.shots .frame {
+	margin: 0;
+}
+
+/* an odd image out spans the full row */
+.shots .frame:last-child:nth-child(odd) {
+	grid-column: 1 / -1;
+}
+
 .frame {
 	border: 1px solid var(--border);
 	border-radius: var(--radius-lg);
