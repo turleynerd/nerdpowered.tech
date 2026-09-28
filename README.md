@@ -9,7 +9,7 @@ Plain static HTML and CSS, no build step.
 index.html              home: hero, featured product, projects
 starship-ops/index.html Starship Ops Panel product page
 404.html                not-found page
-assets/css/site.css     all styles
+assets/css/site.css     all styles (bump the ?v= on its <link> in every page when it changes: browsers cache it)
 assets/img/             logo.svg / favicon.svg, og.png (social preview), product screenshots
 CNAME                   custom domain for GitHub Pages
 ```
