@@ -27,6 +27,10 @@ Product media on `/starship-ops/` (`demo.mp4`, `gallery-*.jpg`, `thumbnail.jpg`)
 
 Comments are GitHub Discussions in this repo, category **Feedback** (Announcement format, so only the maintainer and giscus start threads). Threads use fixed names via `data-mapping="specific"`: **Starship Ops Panel** (`/starship-ops/#feedback`) and **General feedback** (`/feedback/`). To restyle, change `data-theme` in the giscus `<script>` tags. Get notified with Watch → Custom → Discussions.
 
+## Private feedback (Google Forms)
+
+The "Send a private message" card on `/feedback/` and `/starship-ops/#feedback` posts (no-cors) into the Google Form **Nerd Powered Feedback** (owner: Chris's Google account). Field IDs and the form address live in `assets/js/feedback-form.js`; the page sets Topic via `data-topic`. Responses and email notifications are in Google Forms. If you add or rebuild questions, get fresh IDs from the form's ⋮ → Pre-fill form → Get link.
+
 ## DNS
 
 At the domain registrar for nerdpowered.tech:

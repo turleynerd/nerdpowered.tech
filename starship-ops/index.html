@@ -17,7 +17,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/assets/css/site.css?v=20260929">
+	<link rel="stylesheet" href="/assets/css/site.css?v=20260929b">
 </head>
 <body>
 	<a class="skip-link" href="#main">Skip to content</a>
@@ -163,8 +163,30 @@
 						<p class="eyebrow">Feedback</p>
 						<h2 id="feedback-title">Ideas, bugs and requests</h2>
 					</div>
-					<p>Tell us what to add or fix. Sign in with GitHub to post; comments are public.</p>
+					<p>Tell us what to add or fix: send a private message, or discuss it publicly on GitHub.</p>
 				</div>
+				<form class="private-form" data-topic="Starship Ops Panel">
+					<h3>Send a private message</h3>
+					<p class="form-note">No account needed. Only Nerd Powered sees it.</p>
+					<label class="field"><span class="field-label">Message</span>
+						<textarea name="message" rows="5" maxlength="4000" required></textarea>
+					</label>
+					<div class="form-row">
+						<label class="field"><span class="field-label">Name <em>(optional)</em></span>
+							<input name="name" autocomplete="name" maxlength="120">
+						</label>
+						<label class="field"><span class="field-label">Email <em>(optional, if you'd like a reply)</em></span>
+							<input type="email" name="email" autocomplete="email" maxlength="200">
+						</label>
+					</div>
+					<label class="hp" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off"></label>
+					<div class="form-actions">
+						<button class="btn btn-primary" type="submit">Send message</button>
+						<p class="form-status" role="status" aria-live="polite"></p>
+					</div>
+				</form>
+				<h3 class="comments-title">Or join the public discussion</h3>
+				<p class="form-note">Sign in with GitHub to post. Comments are public.</p>
 				<div class="comments">
 					<script src="https://giscus.app/client.js"
 					data-repo="turleynerd/nerdpowered.tech"
@@ -201,5 +223,6 @@
 			demo.controls = true;
 		}
 	</script>
+	<script src="/assets/js/feedback-form.js?v=20260929b" defer></script>
 </body>
 </html>
