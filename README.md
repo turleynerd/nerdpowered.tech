@@ -8,7 +8,9 @@ Plain static HTML and CSS, no build step.
 ```
 index.html              home: hero, featured product, projects
 starship-ops/index.html Starship Ops Panel product page
+feedback/index.html     general feedback page (giscus)
 404.html                not-found page
+giscus.json             origins allowed to embed the Discussions threads
 assets/css/site.css     all styles (bump the ?v= on its <link> in every page when it changes: browsers cache it)
 assets/img/             logo.svg / favicon.svg, og.png (social preview), product screenshots
 CNAME                   custom domain for GitHub Pages
@@ -20,6 +22,10 @@ CNAME                   custom domain for GitHub Pages
 - Maker profile: https://marketplace.elgato.com/@nerdpowered
 
 Product media on `/starship-ops/` (`demo.mp4`, `gallery-*.jpg`, `thumbnail.jpg`) comes from the widget repo's `docs/marketplace/`, converted to JPG with ffmpeg for page weight.
+
+## Feedback (giscus)
+
+Comments are GitHub Discussions in this repo, category **Feedback** (Announcement format, so only the maintainer and giscus start threads). Threads use fixed names via `data-mapping="specific"`: **Starship Ops Panel** (`/starship-ops/#feedback`) and **General feedback** (`/feedback/`). To restyle, change `data-theme` in the giscus `<script>` tags. Get notified with Watch → Custom → Discussions.
 
 ## DNS
 

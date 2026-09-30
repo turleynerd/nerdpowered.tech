@@ -563,6 +563,22 @@ figcaption {
 	justify-content: center;
 }
 
+/* ---------- feedback (giscus) ---------- */
+.comments {
+	max-width: 860px;
+	min-height: 320px;
+}
+
+.hero .meta {
+	margin: 18px 0 0;
+	color: var(--muted);
+	font-size: 15px;
+}
+
+.feedback-thread {
+	padding-top: 0;
+}
+
 /* ---------- footer ---------- */
 .site-footer {
 	border-top: 1px solid var(--border);

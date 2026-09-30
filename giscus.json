@@ -1,0 +1,8 @@
+{
+  "origins": [
+    "https://nerdpowered.tech"
+  ],
+  "originsRegex": [
+    "http://localhost:[0-9]+"
+  ]
+}
