@@ -148,6 +148,19 @@ a:hover {
 	}
 }
 
+/* Keep the header on one line on phones: labels never wrap, and the Projects link (the logo
+   also goes home) drops out on the narrowest screens. */
+.brand .wordmark,
+.site-nav a {
+	white-space: nowrap;
+}
+
+@media (max-width: 440px) {
+	.site-nav .nav-wide {
+		display: none;
+	}
+}
+
 /* ---------- type ---------- */
 h1,
 h2,
@@ -715,6 +728,21 @@ figcaption {
 
 .site-footer a {
 	color: var(--muted);
+}
+
+/* Product theme: RetroAmp (teal / amber). Applied to <main> so the header and footer keep the brand yellow. */
+.theme-retroamp {
+	--accent: #3ce8d0;
+	--accent-ink: #04201c;
+	--accent-2: #ffb347;
+}
+
+.theme-retroamp .btn-primary:hover {
+	background: #7af0e0;
+}
+
+.theme-retroamp .feature .icon {
+	background: rgba(60, 232, 208, 0.12);
 }
 
 @media (prefers-reduced-motion: reduce) {
