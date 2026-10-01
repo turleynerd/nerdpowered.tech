@@ -8,6 +8,7 @@ Plain static HTML and CSS, no build step.
 ```
 index.html              home: hero, featured product, projects
 starship-ops/index.html Starship Ops Panel product page
+retroamp/index.html     RetroAmp product page (teal theme: .theme-retroamp on <main>)
 feedback/index.html     general feedback page (giscus)
 404.html                not-found page
 giscus.json             origins allowed to embed the Discussions threads
@@ -21,11 +22,13 @@ CNAME                   custom domain for GitHub Pages
 - Product: https://marketplace.elgato.com/product/starship-ops-panel-eb4aa49d-fa7f-4e74-9cfb-0752255a216e
 - Maker profile: https://marketplace.elgato.com/@nerdpowered
 
-Product media on `/starship-ops/` (`demo.mp4`, `gallery-*.jpg`, `thumbnail.jpg`) comes from the widget repo's `docs/marketplace/`, converted to JPG with ffmpeg for page weight.
+- RetroAmp: not listed yet; `/retroamp/` buttons point at the maker profile until release (search for `TODO at release`).
+
+Product media on `/starship-ops/` and `/retroamp/` (`demo.mp4`, `gallery-*.jpg`, `thumbnail.jpg`) comes from each widget repo's `docs/marketplace/`, converted to JPG with ffmpeg for page weight.
 
 ## Feedback (giscus)
 
-Comments are GitHub Discussions in this repo, category **Feedback** (Announcement format, so only the maintainer and giscus start threads). Threads use fixed names via `data-mapping="specific"`: **Starship Ops Panel** (`/starship-ops/#feedback`) and **General feedback** (`/feedback/`). To restyle, change `data-theme` in the giscus `<script>` tags. Get notified with Watch → Custom → Discussions.
+Comments are GitHub Discussions in this repo, category **Feedback** (Announcement format, so only the maintainer and giscus start threads). Threads use fixed names via `data-mapping="specific"`: **Starship Ops Panel** (`/starship-ops/#feedback`), **RetroAmp** (`/retroamp/#feedback`) and **General feedback** (`/feedback/`). To restyle, change `data-theme` in the giscus `<script>` tags. Get notified with Watch → Custom → Discussions.
 
 ## Private feedback (Google Forms)
 
