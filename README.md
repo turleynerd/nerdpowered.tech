@@ -22,7 +22,7 @@ CNAME                   custom domain for GitHub Pages
 - Product: https://marketplace.elgato.com/product/starship-ops-panel-eb4aa49d-fa7f-4e74-9cfb-0752255a216e
 - Maker profile: https://marketplace.elgato.com/@nerdpowered
 
-- RetroAmp: not listed yet; `/retroamp/` buttons point at the maker profile until release (search for `TODO at release`).
+- RetroAmp: https://marketplace.elgato.com/product/retroamp-184c20a8-0c1a-46a4-996f-77e4d6547e45
 
 Product media on `/starship-ops/` and `/retroamp/` (`demo.mp4`, `gallery-*.jpg`, `thumbnail.jpg`) comes from each widget repo's `docs/marketplace/`, converted to JPG with ffmpeg for page weight.
 
