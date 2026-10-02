@@ -392,9 +392,25 @@ section {
 	transition: opacity 0.6s ease, visibility 0s linear 0.6s;
 }
 
+/* Every slide lays its header out the same way: text from the top-left, buttons level with the
+   title, so nothing jumps when slides change. Spare height (shorter text) falls below the text. */
 .carousel .slide .copy {
 	flex: 1;
-	align-content: center;
+	align-content: start;
+	align-items: start;
+}
+
+@media (min-width: 900px) {
+	.carousel .slide .copy .actions {
+		margin-top: 26px;
+	}
+}
+
+/* One column (phones): buttons sit at the bottom of the text area on every slide. */
+@media (max-width: 899px) {
+	.carousel .slide .copy {
+		grid-template-rows: 1fr auto;
+	}
 }
 
 /* The demo videos are 16:9 scenes with a title header on top; the card already has the title, so
