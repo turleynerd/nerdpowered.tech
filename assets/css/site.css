@@ -369,6 +369,131 @@ section {
 	height: auto;
 }
 
+.shot video {
+	display: block;
+	width: 100%;
+	height: auto;
+	background: #000;
+}
+
+/* ---------- featured carousel (assets/js/carousel.js) ---------- */
+/* Slides share one grid cell and cross-fade; the tallest slide sets the height. */
+.carousel-slides {
+	display: grid;
+}
+
+/* Slides differ in text length: let the copy stretch so every video sits at the card bottom. */
+.carousel .slide {
+	display: flex;
+	flex-direction: column;
+	grid-area: 1 / 1;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.6s ease, visibility 0s linear 0.6s;
+}
+
+.carousel .slide .copy {
+	flex: 1;
+}
+
+.carousel .slide.is-active {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.6s ease;
+}
+
+.carousel-controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 16px;
+}
+
+.carousel-btn {
+	width: 40px;
+	height: 40px;
+	display: grid;
+	place-items: center;
+	border-radius: 999px;
+	border: 1px solid var(--border);
+	background: var(--surface);
+	color: var(--muted);
+	cursor: pointer;
+	transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.carousel-btn:hover {
+	color: var(--text);
+	border-color: #3a4452;
+}
+
+.carousel-btn svg {
+	width: 18px;
+	height: 18px;
+}
+
+.carousel-toggle .icon-play,
+.carousel-toggle.is-paused .icon-pause {
+	display: none;
+}
+
+.carousel-toggle.is-paused .icon-play {
+	display: block;
+}
+
+.carousel-dots {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 0 6px;
+}
+
+/* Dots: the current one is a pill that fills as its clip plays (--p from carousel.js). */
+.carousel-dot {
+	--p: 0;
+	position: relative;
+	width: 12px;
+	height: 12px;
+	padding: 0;
+	border: 0;
+	border-radius: 999px;
+	background: var(--border);
+	cursor: pointer;
+	overflow: hidden;
+	transition: width 0.3s ease, background 0.15s ease;
+}
+
+.carousel-dot:hover {
+	background: #3a4452;
+}
+
+.carousel-dot[aria-current="true"] {
+	width: 56px;
+}
+
+.carousel-dot[aria-current="true"]::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: var(--accent);
+	transform-origin: left center;
+	transform: scaleX(var(--p));
+}
+
+.carousel-btn:focus-visible,
+.carousel-dot:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.carousel .slide,
+	.carousel .slide.is-active {
+		transition: none;
+	}
+}
+
 /* ---------- project grid ---------- */
 .grid {
 	display: grid;

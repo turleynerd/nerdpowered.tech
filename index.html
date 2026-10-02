@@ -17,7 +17,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/assets/css/site.css?v=20260930a">
+	<link rel="stylesheet" href="/assets/css/site.css?v=20261001a">
 </head>
 <body>
 	<a class="skip-link" href="#main">Skip to content</a>
@@ -52,30 +52,71 @@
 			</div>
 		</section>
 
-		<section class="featured" aria-labelledby="featured-title">
+		<section class="featured" aria-label="Featured widgets">
 			<div class="wrap">
-				<article class="feature-card">
-					<div class="copy">
-						<div>
-							<p class="eyebrow">Featured · CORSAIR XENEON EDGE widget</p>
-							<h2 id="featured-title">Starship Ops Panel</h2>
-							<p>Turn your XENEON EDGE into a starship operations console: live hardware sensors, now playing, Stream Deck command keys, a stardate clock and a Red Alert you can trigger by touch or by temperature.</p>
-							<ul class="chips" aria-label="Highlights">
-								<li>Live sensors</li>
-								<li>Red &amp; Yellow Alert</li>
-								<li>Stream Deck keys</li>
-								<li>Horizontal + vertical</li>
-							</ul>
-						</div>
-						<div class="actions">
-							<a class="btn btn-primary" href="/starship-ops/">View details</a>
-							<a class="btn btn-ghost" href="https://marketplace.elgato.com/product/starship-ops-panel-eb4aa49d-fa7f-4e74-9cfb-0752255a216e">Get it on the Elgato Marketplace</a>
-						</div>
+				<div class="carousel" id="featured-carousel" role="group" aria-roledescription="carousel" aria-label="Featured widgets">
+					<div class="carousel-slides">
+						<article class="feature-card slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 2: Starship Ops Panel">
+							<div class="copy">
+								<div>
+									<p class="eyebrow">Featured · CORSAIR XENEON EDGE widget</p>
+									<h2 id="featured-title">Starship Ops Panel</h2>
+									<p>Turn your XENEON EDGE into a starship operations console: live hardware sensors, now playing, Stream Deck command keys, a stardate clock and a Red Alert you can trigger by touch or by temperature.</p>
+									<ul class="chips" aria-label="Highlights">
+										<li>Live sensors</li>
+										<li>Red &amp; Yellow Alert</li>
+										<li>Stream Deck keys</li>
+										<li>Horizontal + vertical</li>
+									</ul>
+								</div>
+								<div class="actions">
+									<a class="btn btn-primary" href="/starship-ops/">View details</a>
+									<a class="btn btn-ghost" href="https://marketplace.elgato.com/product/starship-ops-panel-eb4aa49d-fa7f-4e74-9cfb-0752255a216e">Get it on the Elgato Marketplace</a>
+								</div>
+							</div>
+							<div class="shot">
+								<video muted playsinline preload="none" width="1920" height="1080"
+									poster="/assets/img/starship-ops/feature-poster.jpg"
+									data-src="/assets/img/starship-ops/demo.mp4" data-start="8.4" data-end="17.3"
+									aria-label="Starship Ops Panel demo: Red Alert by touch and by temperature."></video>
+							</div>
+						</article>
+						<article class="feature-card slide theme-retroamp" role="group" aria-roledescription="slide" aria-label="2 of 2: RetroAmp" aria-hidden="true">
+							<div class="copy">
+								<div>
+									<p class="eyebrow">New · CORSAIR XENEON EDGE widget</p>
+									<h2>RetroAmp</h2>
+									<p>The classic desktop music player on your XENEON EDGE: internet radio, your own music, a real 10-band equalizer, a live visualizer and thousands of classic Winamp 2 skins.</p>
+									<ul class="chips" aria-label="Highlights">
+										<li>Internet radio</li>
+										<li>Your own music</li>
+										<li>10-band EQ</li>
+										<li>Classic skins</li>
+									</ul>
+								</div>
+								<div class="actions">
+									<a class="btn btn-primary" href="/retroamp/">View details</a>
+									<a class="btn btn-ghost" href="https://marketplace.elgato.com/product/retroamp-184c20a8-0c1a-46a4-996f-77e4d6547e45">Get it on the Elgato Marketplace</a>
+								</div>
+							</div>
+							<div class="shot">
+								<video muted playsinline preload="none" width="1920" height="1080"
+									poster="/assets/img/retroamp/feature-poster.jpg"
+									data-src="/assets/img/retroamp/demo.mp4" data-start="0.3" data-end="9"
+									aria-label="RetroAmp demo: internet radio with a live visualizer and equalizer presets."></video>
+							</div>
+						</article>
 					</div>
-					<div class="shot">
-						<img src="/assets/img/starship-ops/horizontal.png" width="2536" height="696" alt="Starship Ops Panel on the XENEON EDGE: sensor readouts, now playing, Stream Deck keys and a stardate clock in a colorful starship-console layout.">
+					<div class="carousel-controls">
+						<button class="carousel-btn carousel-prev" type="button" aria-label="Previous widget"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+						<div class="carousel-dots">
+							<button class="carousel-dot" type="button" aria-label="Show Starship Ops Panel" aria-current="true"></button>
+							<button class="carousel-dot" type="button" aria-label="Show RetroAmp"></button>
+						</div>
+						<button class="carousel-btn carousel-next" type="button" aria-label="Next widget"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+						<button class="carousel-btn carousel-toggle" type="button" aria-pressed="false" aria-label="Pause the slideshow"><svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
 					</div>
-				</article>
+				</div>
 			</div>
 		</section>
 
@@ -127,5 +168,6 @@
 			<p>CORSAIR, iCUE, XENEON EDGE, Elgato and Stream Deck are trademarks of their respective owners. Nerd Powered is not affiliated with or endorsed by CORSAIR or Elgato.</p>
 		</div>
 	</footer>
+	<script src="/assets/js/carousel.js?v=20261001a" defer></script>
 </body>
 </html>

@@ -6,7 +6,7 @@ Plain static HTML and CSS, no build step.
 ## Structure
 
 ```
-index.html              home: hero, featured product, projects
+index.html              home: hero, featured carousel (assets/js/carousel.js: each slide plays a clip of its demo.mp4, data-start/data-end), projects
 starship-ops/index.html Starship Ops Panel product page
 retroamp/index.html     RetroAmp product page (teal theme: .theme-retroamp on <main>)
 feedback/index.html     general feedback page (giscus)
