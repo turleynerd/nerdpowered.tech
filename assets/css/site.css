@@ -394,6 +394,15 @@ section {
 
 .carousel .slide .copy {
 	flex: 1;
+	align-content: center;
+}
+
+/* The demo videos are 16:9 scenes with a title header on top; the card already has the title, so
+   show only the device and its caption (rows 200-1000 of 1080). */
+.carousel .shot video {
+	aspect-ratio: 1920 / 800;
+	object-fit: cover;
+	object-position: 50% 71.5%;
 }
 
 .carousel .slide.is-active {
