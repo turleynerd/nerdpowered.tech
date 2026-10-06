@@ -905,3 +905,38 @@ figcaption {
 		transition: none;
 	}
 }
+
+/* Product theme: Gem Siege (magenta / gold). Applied to <main> so the header and footer keep the brand yellow. */
+.theme-gemsiege {
+	--accent: #ff5fd2;
+	--accent-ink: #2a0522;
+	--accent-2: #ffd34d;
+}
+
+.theme-gemsiege .btn-primary:hover {
+	background: #ff8ee0;
+}
+
+.theme-gemsiege .feature .icon {
+	background: rgba(255, 95, 210, 0.12);
+}
+
+.theme-gemsiege .legal {
+	max-width: 48rem;
+}
+
+.theme-gemsiege .legal h2 {
+	margin-top: 2.2rem;
+	font-size: 1.35rem;
+}
+
+.theme-gemsiege .legal p,
+.theme-gemsiege .legal li {
+	color: var(--muted);
+	line-height: 1.6;
+}
+
+.theme-gemsiege .legal li strong,
+.theme-gemsiege .legal p strong {
+	color: var(--text);
+}
