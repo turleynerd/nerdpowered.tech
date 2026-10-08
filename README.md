@@ -34,6 +34,10 @@ Comments are GitHub Discussions in this repo, category **Feedback** (Announcemen
 
 The "Send a private message" card on `/feedback/` and `/starship-ops/#feedback` posts (no-cors) into the Google Form **Nerd Powered Feedback** (owner: Chris's Google account). Field IDs and the form address live in `assets/js/feedback-form.js`; the page sets Topic via `data-topic`. Responses and email notifications are in Google Forms. If you add or rebuild questions, get fresh IDs from the form's ⋮ → Pre-fill form → Get link.
 
+## Discord
+
+Community server: https://discord.gg/NjRN9gG9D (permanent invite, never expires). Linked from the header nav (`.nav-discord`), every footer, the "Join the community" band on the home page and the feedback page. If the invite is ever replaced, search the repo for `NjRN9gG9D`. The invite background is `assets/brand/discord-invite-splash.png` (1920×1080).
+
 ## DNS
 
 At the domain registrar for nerdpowered.tech:

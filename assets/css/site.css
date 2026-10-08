@@ -142,23 +142,48 @@ a:hover {
 	color: var(--text);
 }
 
-@media (max-width: 560px) {
+/* Keep the header on one line at every width: links drop out in order of priority as the
+   screen narrows (all of them are also in the footer), then the wordmark leaves the logo. */
+@media (max-width: 1040px) {
+	.site-nav .nav-ext {
+		display: none;
+	}
+}
+
+@media (max-width: 820px) {
 	.site-nav .nav-optional {
 		display: none;
 	}
 }
 
-/* Keep the header on one line on phones: labels never wrap, and the Projects link (the logo
-   also goes home) drops out on the narrowest screens. */
-.brand .wordmark,
-.site-nav a {
-	white-space: nowrap;
+@media (max-width: 700px) {
+	.site-nav .nav-discord {
+		display: none;
+	}
 }
 
-@media (max-width: 440px) {
+@media (max-width: 600px) {
 	.site-nav .nav-wide {
 		display: none;
 	}
+}
+
+@media (max-width: 500px) {
+	.brand .wordmark {
+		display: none;
+	}
+}
+
+@media (max-width: 360px) {
+	.site-nav {
+		font-size: 14px;
+	}
+}
+
+/* Labels in the header never wrap. */
+.brand .wordmark,
+.site-nav a {
+	white-space: nowrap;
 }
 
 /* ---------- type ---------- */
