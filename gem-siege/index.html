@@ -17,7 +17,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/assets/css/site.css?v=20261008a">
+	<link rel="stylesheet" href="/assets/css/site.css?v=20261008b">
 </head>
 <body>
 	<a class="skip-link" href="#main">Skip to content</a>
@@ -33,7 +33,6 @@
 				<a href="/starship-ops/">Starship Ops</a>
 				<a href="/retroamp/">RetroAmp</a>
 				<a href="/gem-siege/" aria-current="page">Gem Siege</a>
-				<a class="nav-optional" href="/feedback/">Feedback</a>
 				<a class="nav-discord" href="https://discord.gg/NjRN9gG9D">Discord</a>
 				<a class="nav-ext" href="https://github.com/turleynerd">GitHub</a>
 			</nav>
@@ -101,7 +100,7 @@
 					<div>
 						<h2 id="support-title">Support</h2>
 						<ul>
-							<li><strong>Found a bug or have an idea?</strong> Use the form below, or the <a href="/feedback/">feedback page</a>. TestFlight testers can also use the screenshot feedback built into TestFlight.</li>
+							<li><strong>Found a bug or have an idea?</strong> Tell us on <a href="https://discord.gg/NjRN9gG9D">Discord</a>. TestFlight testers can also use the screenshot feedback built into TestFlight.</li>
 							<li><strong>Scores not showing?</strong> Gem Siege uses Game Center. Make sure you're signed in under Settings › Game Center on your iPhone.</li>
 							<li><strong>Progress missing after a reinstall?</strong> Crystals, unlocks and your loadout sync through iCloud. Check that iCloud Drive is on for the same Apple Account.</li>
 						</ul>
@@ -120,52 +119,13 @@
 
 		<section id="feedback" aria-labelledby="feedback-title">
 			<div class="wrap">
-				<div class="section-head">
-					<div>
-						<p class="eyebrow">Feedback</p>
-						<h2 id="feedback-title">Ideas, bugs and requests</h2>
+				<div class="cta-band">
+					<p class="eyebrow">Feedback</p>
+					<h2 id="feedback-title">Ideas, bugs and requests</h2>
+					<p class="lede" style="margin-left:auto;margin-right:auto">Feedback for Gem Siege lives on the Nerd Powered Discord. Report bugs, suggest features and see what's coming next.</p>
+					<div class="actions">
+						<a class="btn btn-primary" href="https://discord.gg/NjRN9gG9D">Join the Discord</a>
 					</div>
-					<p>Tell us what to add or fix: send a private message, or discuss it publicly on GitHub.</p>
-				</div>
-				<form class="private-form" data-topic="Gem Siege">
-					<h3>Send a private message</h3>
-					<p class="form-note">No account needed. Only Nerd Powered sees it.</p>
-					<label class="field"><span class="field-label">Message</span>
-						<textarea name="message" rows="5" maxlength="4000" required></textarea>
-					</label>
-					<div class="form-row">
-						<label class="field"><span class="field-label">Name <em>(optional)</em></span>
-							<input name="name" autocomplete="name" maxlength="120">
-						</label>
-						<label class="field"><span class="field-label">Email <em>(optional, if you'd like a reply)</em></span>
-							<input type="email" name="email" autocomplete="email" maxlength="200">
-						</label>
-					</div>
-					<label class="hp" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off"></label>
-					<div class="form-actions">
-						<button class="btn btn-primary" type="submit">Send message</button>
-						<p class="form-status" role="status" aria-live="polite"></p>
-					</div>
-				</form>
-				<h3 class="comments-title">Or join the public discussion</h3>
-				<p class="form-note">Sign in with GitHub to post. Comments are public.</p>
-				<div class="comments">
-					<script src="https://giscus.app/client.js"
-						data-repo="turleynerd/nerdpowered.tech"
-						data-repo-id="R_kgDOUs_hLg"
-						data-category="Feedback"
-						data-category-id="DIC_kwDOUs_hLs4DGsOl"
-						data-mapping="specific"
-						data-term="Gem Siege"
-						data-strict="1"
-						data-reactions-enabled="1"
-						data-emit-metadata="0"
-						data-input-position="top"
-						data-theme="transparent_dark"
-						data-lang="en"
-						data-loading="lazy"
-						crossorigin="anonymous"
-						async></script>
 				</div>
 			</div>
 		</section>
@@ -173,10 +133,9 @@
 
 	<footer class="site-footer">
 		<div class="wrap">
-			<p>© 2026 Nerd Powered. <a href="/">Home</a> · <a href="/gem-siege/">Gem Siege</a> · <a href="/gem-siege/privacy/">Privacy policy</a> · <a href="/feedback/">Feedback</a> · <a href="https://discord.gg/NjRN9gG9D">Discord</a> · <a href="https://github.com/turleynerd">GitHub</a></p>
+			<p>© 2026 Nerd Powered. <a href="/">Home</a> · <a href="/gem-siege/">Gem Siege</a> · <a href="/gem-siege/privacy/">Privacy policy</a> · <a href="https://discord.gg/NjRN9gG9D">Discord</a> · <a href="https://github.com/turleynerd">GitHub</a></p>
 			<p>Apple, the Apple logo, iPhone, App Store, TestFlight, Game Center and iCloud are trademarks of Apple Inc. Nerd Powered is not affiliated with or endorsed by Apple.</p>
 		</div>
 	</footer>
-	<script src="/assets/js/feedback-form.js?v=20260929b" defer></script>
 </body>
 </html>
