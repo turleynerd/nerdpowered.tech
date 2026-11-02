@@ -150,6 +150,12 @@ a:hover {
 	}
 }
 
+@media (max-width: 860px) {
+	.site-nav .nav-mid {
+		display: none;
+	}
+}
+
 @media (max-width: 700px) {
 	.site-nav .nav-discord {
 		display: none;
@@ -788,6 +794,21 @@ figcaption {
 
 .theme-retroamp .feature .icon {
 	background: rgba(60, 232, 208, 0.12);
+}
+
+/* Product theme: Santa Tracker (red / gold). */
+.theme-santa {
+	--accent: #ff4d5e;
+	--accent-ink: #2a0509;
+	--accent-2: #ffcc4d;
+}
+
+.theme-santa .btn-primary:hover {
+	background: #ff7a87;
+}
+
+.theme-santa .feature .icon {
+	background: rgba(255, 77, 94, 0.12);
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -9,6 +9,7 @@ Plain static HTML and CSS, no build step.
 index.html              home: hero, featured carousel (assets/js/carousel.js: each slide plays a clip of its demo.mp4, data-start/data-end), projects
 starship-ops/index.html Starship Ops Panel product page
 retroamp/index.html     RetroAmp product page (teal theme: .theme-retroamp on <main>)
+santa-tracker/index.html Santa Tracker product page, free widget (red/gold theme: .theme-santa on <main>)
 feedback/index.html     feedback page (points to Discord)
 404.html                not-found page
 assets/css/site.css     all styles (bump the ?v= on its <link> in every page when it changes: browsers cache it)
@@ -22,8 +23,9 @@ CNAME                   custom domain for GitHub Pages
 - Maker profile: https://marketplace.elgato.com/@nerdpowered
 
 - RetroAmp: https://marketplace.elgato.com/product/retroamp-184c20a8-0c1a-46a4-996f-77e4d6547e45
+- Santa Tracker: not listed yet. Its buttons point to the maker profile; swap in the product URL (search for "MARKETPLACE LINK" and the home page slide/card) once it is live.
 
-Product media on `/starship-ops/` and `/retroamp/` (`demo.mp4`, `gallery-*.jpg`, `thumbnail.jpg`) comes from each widget repo's `docs/marketplace/`, converted to JPG with ffmpeg for page weight.
+Product media on `/starship-ops/`, `/retroamp/` and `/santa-tracker/` (`demo.mp4`, `gallery-*.jpg`, `thumbnail.jpg`) comes from each widget repo's `docs/marketplace/`, converted to JPG with ffmpeg for page weight.
 
 ## Discord
 

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Nerd Powered: widgets, games and tools for your setup</title>
-	<meta name="description" content="Nerd Powered builds desk-setup widgets, games and developer tools, including Starship Ops Panel and RetroAmp for the CORSAIR XENEON EDGE.">
+	<meta name="description" content="Nerd Powered builds desk-setup widgets, games and developer tools, including Starship Ops Panel, RetroAmp and Santa Tracker for the CORSAIR XENEON EDGE.">
 	<link rel="canonical" href="https://nerdpowered.tech/">
 	<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
 	<meta property="og:type" content="website">
@@ -17,7 +17,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/assets/css/site.css?v=20261008b">
+	<link rel="stylesheet" href="/assets/css/site.css?v=20261102a">
 </head>
 <body>
 	<a class="skip-link" href="#main">Skip to content</a>
@@ -32,6 +32,7 @@
 				<a class="nav-wide" href="#projects">Projects</a>
 				<a href="/starship-ops/">Starship Ops</a>
 				<a href="/retroamp/">RetroAmp</a>
+				<a class="nav-mid" href="/santa-tracker/">Santa Tracker</a>
 				<a href="/gem-siege/">Gem Siege</a>
 				<a class="nav-discord" href="https://discord.gg/NjRN9gG9D">Discord</a>
 				<a class="nav-ext" href="https://marketplace.elgato.com/@nerdpowered">Marketplace</a>
@@ -56,7 +57,7 @@
 			<div class="wrap">
 				<div class="carousel" id="featured-carousel" role="group" aria-roledescription="carousel" aria-label="Featured widgets">
 					<div class="carousel-slides">
-						<article class="feature-card slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 2: Starship Ops Panel">
+						<article class="feature-card slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3: Starship Ops Panel">
 							<div class="copy">
 								<div>
 									<p class="eyebrow">iCUE widget · CORSAIR XENEON EDGE</p>
@@ -81,7 +82,7 @@
 									aria-label="Starship Ops Panel demo: Red Alert by touch and by temperature."></video>
 							</div>
 						</article>
-						<article class="feature-card slide theme-retroamp" role="group" aria-roledescription="slide" aria-label="2 of 2: RetroAmp" aria-hidden="true">
+						<article class="feature-card slide theme-retroamp" role="group" aria-roledescription="slide" aria-label="2 of 3: RetroAmp" aria-hidden="true">
 							<div class="copy">
 								<div>
 									<p class="eyebrow">iCUE widget · CORSAIR XENEON EDGE</p>
@@ -106,12 +107,38 @@
 									aria-label="RetroAmp demo: internet radio with a live visualizer and equalizer presets."></video>
 							</div>
 						</article>
+						<article class="feature-card slide theme-santa" role="group" aria-roledescription="slide" aria-label="3 of 3: Santa Tracker" aria-hidden="true">
+							<div class="copy">
+								<div>
+									<p class="eyebrow">Free iCUE widget · CORSAIR XENEON EDGE</p>
+									<h2>Santa Tracker</h2>
+									<p>Count down to Christmas, then follow Santa city by city on Christmas Eve: a live night-lights map, his arrival at your house, snow where it's snowing, and messages for your kids.</p>
+									<ul class="chips" aria-label="Highlights">
+										<li>Free</li>
+										<li>Live map</li>
+										<li>Messages for kids</li>
+										<li>Live weather</li>
+									</ul>
+								</div>
+								<div class="actions">
+									<a class="btn btn-primary" href="/santa-tracker/">View details</a>
+									<a class="btn btn-ghost" href="https://marketplace.elgato.com/@nerdpowered">Get it free on the Elgato Marketplace</a>
+								</div>
+							</div>
+							<div class="shot">
+								<video muted playsinline preload="none" width="1920" height="1080"
+									poster="/assets/img/santa-tracker/feature-poster.jpg"
+									data-src="/assets/img/santa-tracker/demo.mp4" data-start="23" data-end="37"
+									aria-label="Santa Tracker demo: Santa flies to a house in Chicago while the elves send the kids messages."></video>
+							</div>
+						</article>
 					</div>
 					<div class="carousel-controls">
 						<button class="carousel-btn carousel-prev" type="button" aria-label="Previous widget"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
 						<div class="carousel-dots">
 							<button class="carousel-dot" type="button" aria-label="Show Starship Ops Panel" aria-current="true"></button>
 							<button class="carousel-dot" type="button" aria-label="Show RetroAmp"></button>
+							<button class="carousel-dot" type="button" aria-label="Show Santa Tracker"></button>
 						</div>
 						<button class="carousel-btn carousel-next" type="button" aria-label="Next widget"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
 						<button class="carousel-btn carousel-toggle" type="button" aria-pressed="false" aria-label="Pause the slideshow"><svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button>
@@ -124,7 +151,7 @@
 			<div class="wrap">
 				<div class="section-head">
 					<h2 id="projects-title">Projects</h2>
-					<p>Products for sale and open-source side projects.</p>
+					<p>Widgets, games and open-source side projects.</p>
 				</div>
 				<div class="grid">
 					<a class="card product" href="/starship-ops/">
@@ -137,6 +164,12 @@
 						<span class="tag">iCUE widget · XENEON EDGE</span>
 						<h3>RetroAmp</h3>
 						<p>A classic skinnable music player for the CORSAIR XENEON EDGE: internet radio, your own music, a 10-band EQ, a live visualizer and classic skins.</p>
+						<span class="more">Product page</span>
+					</a>
+					<a class="card product" href="/santa-tracker/">
+						<span class="tag">Free iCUE widget · XENEON EDGE</span>
+						<h3>Santa Tracker</h3>
+						<p>A Christmas countdown and Christmas Eve Santa tracker for the CORSAIR XENEON EDGE, with a live map, snow and messages for your kids.</p>
 						<span class="more">Product page</span>
 					</a>
 					<a class="card product" href="/gem-siege/">
@@ -159,7 +192,7 @@
 				<div class="cta-band">
 					<p class="eyebrow">Discord</p>
 					<h2 id="community-title">Join the Nerd Powered community</h2>
-					<p class="lede" style="margin-left:auto;margin-right:auto">Show off your setup, get help with Starship Ops, RetroAmp and Gem Siege, report bugs and vote on what gets built next.</p>
+					<p class="lede" style="margin-left:auto;margin-right:auto">Show off your setup, get help with Starship Ops, RetroAmp, Santa Tracker and Gem Siege, report bugs and vote on what gets built next.</p>
 					<div class="actions">
 						<a class="btn btn-primary" href="https://discord.gg/NjRN9gG9D">Join the Discord</a>
 					</div>
