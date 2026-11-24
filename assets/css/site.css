@@ -144,7 +144,7 @@ a:hover {
 
 /* Keep the header on one line at every width: links drop out in order of priority as the
    screen narrows (all of them are also in the footer), then the wordmark leaves the logo. */
-@media (max-width: 1040px) {
+@media (max-width: 1060px) {
 	.site-nav .nav-ext {
 		display: none;
 	}
@@ -822,18 +822,18 @@ figcaption {
 	}
 }
 
-/* Product theme: Oathforge (ember orange / gold). */
-.theme-oathforge {
+/* Product theme: Swornsteel (ember orange / gold). */
+.theme-swornsteel {
 	--accent: #ff8a3d;
 	--accent-ink: #2a1205;
 	--accent-2: #ffcc70;
 }
 
-.theme-oathforge .btn-primary:hover {
+.theme-swornsteel .btn-primary:hover {
 	background: #ffa96e;
 }
 
-.theme-oathforge .feature .icon {
+.theme-swornsteel .feature .icon {
 	background: rgba(255, 138, 61, 0.12);
 }
 

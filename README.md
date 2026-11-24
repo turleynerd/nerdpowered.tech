@@ -10,7 +10,7 @@ index.html              home: hero, featured carousel (assets/js/carousel.js: ea
 starship-ops/index.html Starship Ops Panel product page
 retroamp/index.html     RetroAmp product page (teal theme: .theme-retroamp on <main>)
 santa-tracker/index.html Santa Tracker product page, free widget (red/gold theme: .theme-santa on <main>)
-oathforge/index.html     Oathforge product page (ember theme: .theme-oathforge on <main>)
+swornsteel/index.html     Swornsteel product page (ember theme: .theme-swornsteel on <main>)
 feedback/index.html     feedback page (points to Discord)
 404.html                not-found page
 assets/css/site.css     all styles (bump the ?v= on its <link> in every page when it changes: browsers cache it)
@@ -25,7 +25,7 @@ CNAME                   custom domain for GitHub Pages
 
 - RetroAmp: https://marketplace.elgato.com/product/retroamp-184c20a8-0c1a-46a4-996f-77e4d6547e45
 - Santa Tracker: not listed yet. Its buttons point to the maker profile; swap in the product URL (search for "MARKETPLACE LINK" and the home page slide/card) once it is live.
-- Oathforge: not listed yet. Its buttons point to the maker profile; swap in the product URL (search for "MARKETPLACE LINK") once it is live, and swap the hero image for demo.mp4 (search for "DEMO VIDEO").
+- Swornsteel: not listed yet. Its buttons point to the maker profile; swap in the product URL (search for "MARKETPLACE LINK") once it is live, and swap the hero image for demo.mp4 (search for "DEMO VIDEO").
 
 Product media on `/starship-ops/`, `/retroamp/` and `/santa-tracker/` (`demo.mp4`, `gallery-*.jpg`, `thumbnail.jpg`) comes from each widget repo's `docs/marketplace/`, converted to JPG with ffmpeg for page weight.
 
